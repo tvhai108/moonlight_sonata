@@ -1,0 +1,19 @@
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
+
+
+###
+### 1.5. STEP 4: IMPORT ROUTING CONFIGURATION
+###
+admin_area:
+    resource: "@SonataAdminBundle/Resources/config/routing/sonata_admin.xml"
+    prefix: /admin
+
+###
+### 2.4. STEP 4: REGISTER SONATAADMIN CUSTOM ROUTES
+###
+_sonata_admin:
+    resource: .
+    type: sonata_admin
+    prefix: /admin
